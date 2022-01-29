@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+
+.TodoItem {
+   padding:1rem 1.5rem;
+   border-bottom: 2px solid $Very-Ligh-Grayish-Blue;
+   display: flex;
+   
+   input[type="checkbox"]{
+      display: none;
+   }
+   p {
+      font-size: .9rem;
+      margin: 0 1rem;
+      color: $Very-Dark-Grayish-Blue1;
+      text-transform: capitalize;
+   }
+   .Underline {
+      color: $Dark-Grayish-Blue;
+      text-decoration:line-through;
+      opacity: .7;
+   }
+
+   label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 100%;
+      overflow: hidden;
+      border: 1px solid $Very-Ligh-Grayish-Blue;
+
+   }
+   .ticked {
+      border: none;
+      background: $Check-Background;
+   }
+   button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-left: auto;
+   }
+   .edit {
+      border-radius: .8rem;
+      width: 100%;
+      padding: .5rem 2rem;
+      border: 2px solid $Bright-Blue;
+      &:focus {
+         outline: none;
+      }
+   }
+}
+.DarkMode {
+   border-bottom: 2px solid $Very-Dark-Grayish-Blue1;
+   p {
+      color: $Very-Ligh-Grayish-Blue;
+   }
+   label { 
+      border-color: $Dark-Grayish-Blue;
+      background-color: $Very-Dark-Desaturated-Blue;
+   }
+   button.DaM {
+      background-color: $Very-Dark-Desaturated-Blue;
+   }
+
+}

@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+@import "../../styles//mixins";
+
+.Todolist {
+   display: flex;
+   justify-content: center;
+   padding: 0 1.5rem 2rem;
+   position: absolute;
+   top: 23.7vh;
+   width: 100%;
+   margin: auto;
+   @include desktop {
+      top: 30vh;
+   }
+   .List {
+      border-radius: .3rem;
+      background: $Very-Light-Gray;
+      width: 100%;
+      box-shadow: 0 0 3rem rgba(0,0,0,.2);
+      @include desktop {
+         width: 40%;
+      }
+   }
+   .darkmode {
+      background-color: $Very-Dark-Desaturated-Blue;
+   }
+}

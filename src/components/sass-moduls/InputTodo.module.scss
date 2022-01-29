@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   position: absolute;
+   top:15vh;
+
+   @include desktop {
+      top:20vh;
+   }
+   
+   input {
+      border-radius: .3rem 0 0 .3rem;
+         width: 70%;
+         padding: 1rem;
+         &:focus {
+            outline: none;
+         }
+         @include desktop {
+            width: 35%;
+         }
+   }
+   .darkmode {
+      background-color: $Very-Dark-Desaturated-Blue;
+      color: $Light-Grayish-Blue;
+      & + button {
+         color: $Light-Grayish-Blue;
+      }
+   }
+   button {
+      padding: 1rem;
+      border-radius: 0 .3rem .3rem 0;
+      background: $Check-Background;
+      color: white;
+      font-weight: 700;
+   }
+}

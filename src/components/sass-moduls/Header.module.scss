@@ -1,0 +1,41 @@
+@import "../../styles/mixins";
+
+.header {
+   height: 30vh;
+   padding: 3rem 2rem;
+   display: flex;
+   @include desktop {
+      height: 40vh;
+      padding: 4rem 31%;
+   }
+   h1 {
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: .4rem;
+      font-weight: 400;
+   }
+   .ThemeToggle {
+      margin-left: auto ;
+      width:2rem;
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+.mobileBL {
+   background: url(../../images/bg-mobile-light.jpg);
+   @include background; 
+}
+.mobileBD {
+   background: url(../../images/bg-mobile-dark.jpg);
+   @include background;
+}
+.desktopBL {
+   background: url(../../images/bg-desktop-light.jpg);
+   @include background;
+}
+.desktopBD {
+   background: url(../../images/bg-desktop-dark.jpg);
+   @include background;
+}
